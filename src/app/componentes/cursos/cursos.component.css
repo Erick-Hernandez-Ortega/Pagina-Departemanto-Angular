@@ -1,0 +1,63 @@
+:root {
+  --text-color: #c7c7c7;
+  --body-color: #202020;
+  --title-color: #b7b7b7;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 10px;
+  width: 80%;
+  margin: auto;
+}
+
+.card {
+  justify-self: center;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  width: 350px;
+  border-radius: 20px;
+  margin: 10px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-1%);
+}
+
+.card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.card a {
+  display: inline-block;
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--text-color);
+  padding: 10px;
+  border: 1px solid var(--text-color);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.card a:hover {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  color: var(--title-color);
+}
+
+.card .info {
+  text-align: center;
+  overflow: hidden;
+}
+
+.card p {
+  color: var(--text-color);
+  padding: 10px;
+}

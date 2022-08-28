@@ -1,0 +1,32 @@
+<app-header-component></app-header-component>
+<div id="slider">
+    <div class="video">
+        <iframe width="90%" height="540" src="https://www.youtube.com/embed/0TFZfvvB67Y"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen name="video"></iframe>
+    </div>
+
+
+    <div id="info">
+        <h3>Charlas, videos de interes</h3>
+        <select onchange="video.location.href=this.options[this.selectedIndex].value">
+            <option value="https://www.youtube.com/embed/0TFZfvvB67Y" selected>Pensamiento computacional | Alberto Cañas
+            </option>
+            <option value="https://www.youtube.com/embed/NnA_4itQYSE">Data Science e Inteligencia Artificial
+            </option>
+            <option value="https://www.youtube.com/embed/UNFFLJPW7KQ">Tu primera red neuronal - Inteligencia Artificial
+            </option>
+        </select>
+
+        <h3>Videos de apoyo</h3>
+        <select onchange="video.location.href=this.options[this.selectedIndex].value">
+            <option value="https://www.youtube.com/embed/TNQevuufx8w">Canva</option>
+            <option value="https://www.youtube.com/embed/pRS8_bcLLKA">Cómo usar Genially</option>
+            <option value="https://www.youtube.com/embed/GAZmEsnjsmc">Como Descargar e instalar obs</option>
+            <option value="https://www.youtube.com/embed/MkUsmhSDYaE">Como grabar pantalla en OBS Studio para tus clases</option>
+            <option value="https://www.youtube.com/embed/TNQevuufx8w">Canva</option>
+        </select>
+    </div>
+</div>
+<app-footer></app-footer>

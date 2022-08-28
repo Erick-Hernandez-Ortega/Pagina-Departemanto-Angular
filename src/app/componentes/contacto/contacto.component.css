@@ -1,0 +1,65 @@
+:root {
+  --border: #b7b7b7;
+}
+
+.contenido {
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  gap: 15px;
+  z-index: 100;
+}
+
+.card span {
+  font-size: 175px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.card {
+  display: flex;
+  width: 450px;
+  justify-self: center;
+  border: 2px solid var(--border);
+  border-radius: 5px;
+}
+
+.card .info {
+  border-left: 1px solid var(--border);
+  padding: 10px;
+}
+
+.card .info p,
+.card .info h3 {
+  text-align: center;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+@media screen and (max-width: 805px) {
+  .card span {
+    display: none;
+  }
+
+  .contenido {
+    width: 100%;
+  }
+
+  .card .info {
+    font-size: 13px;
+    border: none;
+    margin: auto;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .card {
+    width: 300px;
+  }
+}

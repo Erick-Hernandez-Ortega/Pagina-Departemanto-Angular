@@ -1,0 +1,153 @@
+:root {
+  --border: #b7b7b7;
+}
+
+#contenido,
+#contenido-tabla {
+  justify-content: center;
+  display: flex;
+  margin: auto;
+  margin-top: 20px;
+}
+
+#malla p {
+  text-align: center;
+  font-size: 18px;
+  padding: 1%;
+}
+
+#malla {
+  width: 95%;
+  margin: auto;
+}
+
+#malla object {
+  display: block;
+  margin: auto;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#contedor-tabla caption {
+  font-size: 18px;
+  padding: 1%;
+  margin-top: 5px;
+}
+
+.caption1 {
+  background-color: rgb(255, 217, 0);
+}
+
+.caption2 {
+  background-color: orange;
+}
+
+.caption3 {
+  background-color: green;
+}
+
+.caption4 {
+  background-color: rgb(91, 91, 248);
+}
+
+.caption5 {
+  background-color: turquoise;
+}
+
+#contedor-tabla {
+  width: 95%;
+  margin: auto;
+}
+
+.tabla {
+  width: 100%;
+  border: 1px var(--border) solid;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  table-layout: fixed;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.tabla tr {
+  border: 1px solid var(--border);
+}
+
+.tabla th,
+.tabla td {
+  text-align: center;
+  border: 1px solid var(--border);
+  padding: 7px;
+}
+
+.tabla thead {
+  text-transform: uppercase;
+}
+
+.tabla tr td a {
+  text-decoration: none;
+  color: black;
+}
+
+#b-descargar {
+  background-color: #f5f5f5;
+  text-decoration: none;
+  padding: 7px 7px;
+  color: black;
+  border-radius: 10px;
+  border: solid black;
+  margin: auto 10px;
+  display: none;
+}
+
+#malla span {
+  display: none;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+@media screen and (max-width: 820px) {
+  #malla object {
+    display: none;
+  }
+
+  #b-descargar {
+    font-size: 18px;
+    display: inline-block;
+  }
+
+  #malla p {
+    font-size: 20px;
+  }
+
+  #malla {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #malla span {
+    display: block;
+    margin-top: 30px;
+    font-size: 25px;
+  }
+
+  .tabla {
+    border: 0px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .tabla thead {
+    display: none;
+  }
+
+  .tabla tr {
+    font-size: 18px;
+  }
+
+  .tabla td {
+    display: block;
+    border: 0px;
+  }
+}

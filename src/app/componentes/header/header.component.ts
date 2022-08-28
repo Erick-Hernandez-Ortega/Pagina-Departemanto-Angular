@@ -1,3 +1,4 @@
+import { VariableBinding } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,8 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+  showMe : boolean = false
 
   constructor() { }
+
+  mostrar(){
+    this.showMe = !this.showMe;
+  }
 
   ngOnInit(): void {
   }

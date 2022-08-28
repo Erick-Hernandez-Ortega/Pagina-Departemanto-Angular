@@ -1,0 +1,69 @@
+@media (prefers-color-scheme: dark) {
+  /* es el predetermindado */
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --title-color: #2a3b47;
+    --text-color: #697477;
+    --body-color: #fbfbfe;
+  }
+
+  nav,
+  nav ul li > a,
+  nav ul a {
+    background-color: var(--body-color);
+  }
+
+  nav ul li > a,
+  nav ul a {
+    color: var(--title-color);
+  }
+
+  nav ul li .link::before {
+    background-color: var(--title-color);
+  }
+
+  #bienvenida h2, #primer_i h2, #primer_i h3 {
+    color: var(--title-color);
+  }
+
+  #bienvenida, #primer_i {
+    background-color: rgba(251, 251, 254, 0.9);
+    color: var(--text-color);
+  }
+
+  footer {
+    background-color: var(--body-color);
+  }
+
+  #columna1 h3,
+  #columna2,
+  footer #columna2 ul li a {
+    color: var(--title-color);
+  }
+
+  #columna1 h4, #columna1 p {
+    color: var(--text-color);
+  }
+
+  nav .mobile .header #bMenuMobile {
+    color: var(--title-color);
+  }
+
+  nav .mobile .linksMobile, nav .mobile .header {
+    background-color: var(--body-color);
+  }
+
+  nav .mobile .linksMobile a {
+    color: var(--title-color);
+  }
+
+  nav .mobile .linksMobile a:hover  {
+    color: var(--body-color);
+    background-color: var(--text-color);
+    transition: all ease 0.3s;
+
+  }
+
+}

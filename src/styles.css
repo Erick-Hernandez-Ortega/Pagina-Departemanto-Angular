@@ -3,10 +3,15 @@
   --text-color: #c7c7c7;
   --body-color: #202020;
   --title-color: #b7b7b7;
+  --border: #b7b7b7;
 }
 
 * {
   box-sizing: border-box;
+}
+
+a {
+  cursor: pointer;
 }
 
 body {
@@ -15,6 +20,7 @@ body {
   line-height: 1.5;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 16px;
+  background-color: #f1f1f1;
 }
 
 .show {
@@ -146,7 +152,7 @@ footer #columna2 ul li a {
 
 .mas,
 .mas2 {
-  display: none;
+  display: none;  /* mod */
 }
 
 .menu-mas,
@@ -158,7 +164,7 @@ footer #columna2 ul li a {
   min-width: 200px;
   border-radius: 5px;
 
-  display: none;
+  display: flex !important;  /* mod */
   z-index: 200;
 }
 
@@ -197,7 +203,7 @@ nav .mobile .header #bMenuMobile {
 }
 
 nav .mobile .linksMobile {
-  display: none;
+  display: flex !important;
   flex-direction: column;
   position: relative;
   background-color: var(--body-color);
