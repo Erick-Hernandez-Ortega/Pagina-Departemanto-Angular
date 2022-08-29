@@ -1,8 +1,10 @@
 <app-header-component></app-header-component>
 <div class="container-convo">
-    <div class="convocatoria"><img src="../../../assets/convocatoria1.jpeg" alt=""></div>
-    <div class="convocatoria"><img src="../../../assets/convocatoria2.jpeg" alt=""></div>
-    <div class="convocatoria"><img src="../../../assets/convocatoria3.jpeg" alt=""></div>
-    <div class="convocatoria"><img src="../../../assets/convocatoria4.jpeg" alt=""></div>
+    <div class="convocatoria" *ngFor="let i of imagenes"><img [src]="i" alt=""></div>
+    <!-- <ul>
+        <li class="text" *ngFor="let item of items | async">
+          {{item.Imagenes}}
+        </li>
+      </ul> -->
 </div>
 <app-footer></app-footer>

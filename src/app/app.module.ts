@@ -2,6 +2,10 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { AngularFireStorageModule } from '@angular/fire/compat/storage';  // mod
+
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './componentes/header/header.component';
 import { ContenidoComponent } from './componentes/contenido/contenido.component';
@@ -13,6 +17,9 @@ import { ConvocatoriasComponent } from './componentes/convocatorias/convocatoria
 import { CursosComponent } from './componentes/cursos/cursos.component';
 import { VideosComponent } from './componentes/videos/videos.component';
 import { ContactoComponent } from './componentes/contacto/contacto.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideStorage,getStorage } from '@angular/fire/storage';
 
 @NgModule({
   declarations: [
@@ -30,7 +37,12 @@ import { ContactoComponent } from './componentes/contacto/contacto.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule,
+    AngularFireStorageModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideStorage(() => getStorage())  // mod
   ],
   providers: [],
   bootstrap: [AppComponent]

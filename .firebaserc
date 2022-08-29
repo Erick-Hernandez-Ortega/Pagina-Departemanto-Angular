@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "pagina-departamento": {
+      "hosting": {
+        "pagina-departamento": [
+          "pagina-departamento"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "pagina-departamento"
+  }
+}
