@@ -72,9 +72,16 @@
   border: 1px solid var(--border);
 }
 
+#nombre, #url {
+  text-align: center;
+}
+
+#descripcion {
+  text-align: justify;
+}
+
 .tabla th,
 .tabla td {
-  text-align: center;
   border: 1px solid var(--border);
   padding: 7px;
 }
