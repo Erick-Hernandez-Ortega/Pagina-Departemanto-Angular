@@ -13,4 +13,6 @@ Características del proyecto:
 
 Este proyectoha sido desarrollado con el objetivo de ofrecer una plataforma moderna y accesible para todos los usuarios interesados en conocer más sobre la ingeniería en ciencias computacionales en Cutonala. Además, la integración con Firebase permite una gestión eficiente de los datos y la posibilidad de mantener el contenido del sitio actualizado de manera sencilla.
 
+- Pagina desplegada: https://ramonchis47.github.io/Pagina-Departemanto-Angular/
+
 Nota: Este proyecto es puramente educativo y no está asociado de ninguna manera con la institución académica mencionada anteriormente.
